@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  dotnet:
+    image: ghcr.io/social-flow/asp-auto:dev-v1.1
+    network_mode: host
+  
+volumes:
+  custom_pg_data:

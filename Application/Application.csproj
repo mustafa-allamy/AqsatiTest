@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <None Remove="Interfaces\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="7.0.0-preview2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="4.0.4" />
+    <PackageReference Include="Mapster" Version="7.3.0" />
+    <PackageReference Include="Mediator.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Mediator.SourceGenerator" Version="2.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.3" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.4.3" />
+    <PackageReference Include="OneOf" Version="3.0.255" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.54.0.64047">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CQRS\DepartmentInfo\DepartmentExcelTemplates\Dtos\" />
+    <Folder Include="CQRS\DepartmentInfo\DepartmentExcelTemplates\Handlers\Commands\" />
+    <Folder Include="CQRS\DepartmentInfo\DepartmentExcelTemplates\Handlers\Queries\" />
+    <Folder Include="CQRS\DepartmentInfo\DepartmentExcelTemplates\Validators\" />
+    <Folder Include="CQRS\DepartmentInfo\DepartmentServices\Dtos\" />
+    <Folder Include="CQRS\DepartmentInfo\Departments\Dtos\" />
+    <Folder Include="CQRS\DepartmentInfo\Departments\Handlers\Commands\" />
+    <Folder Include="CQRS\DepartmentInfo\Departments\Handlers\Queries\" />
+    <Folder Include="CQRS\DepartmentInfo\Departments\Validations\" />
+    <Folder Include="CQRS\DepartmentInfo\DepartmentUnits\Dtos\" />
+    <Folder Include="CQRS\DepartmentInfo\DepartmentUnits\Handlers\Commands\" />
+    <Folder Include="CQRS\DepartmentInfo\DepartmentUnits\Handlers\Queries\" />
+    <Folder Include="CQRS\DepartmentInfo\DepartmentUnits\Validators\" />
+    <Folder Include="CQRS\DepartmentInfo\DepartmentVacationTypes\Handlers\Commands\" />
+    <Folder Include="CQRS\DepartmentInfo\DepartmentVacationTypes\Handlers\Queries\" />
+    <Folder Include="CQRS\SystemGeneralInfo\ExcelTemplate\Handlers\Queries\" />
+    <Folder Include="CQRS\SystemGeneralInfo\GeneralServices\Dtos\" />
+    <Folder Include="CQRS\SystemGeneralInfo\GeneralServices\Handlers\Queries\" />
+    <Folder Include="CQRS\SystemGeneralInfo\GeneralServices\Validations\" />
+    <Folder Include="CQRS\SystemGeneralInfo\GeneralVacation\Handlers\Queries\" />
+    <Folder Include="CQRS\SystemGeneralInfo\Salaries\Forms\" />
+    <Folder Include="CQRS\SystemGeneralInfo\Salaries\Dtos\" />
+    <Folder Include="CQRS\SystemGeneralInfo\Salaries\Handlers\Queries\" />
+    <Folder Include="CQRS\SystemGeneralInfo\Salaries\Validators\" />
+    <Folder Include="CQRS\User\Handlers\Queries\" />
+  </ItemGroup>
+
+</Project>

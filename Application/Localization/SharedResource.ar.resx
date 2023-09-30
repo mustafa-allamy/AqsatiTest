@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Permission.NotFound" xml:space="preserve">
+    <value>لم يتم ايجاد صلاحية بهذا المعرف</value>
+  </data>
+  <data name="PermissionGroup.DeleteNotAllowed" xml:space="preserve">
+    <value>لا يمكن حذف مجموعة صلاحيات لأن هناك مستخدمون مرتبطون بهذه المجموعة</value>
+  </data>
+  <data name="PermissionGroup.Name.Unique" xml:space="preserve">
+    <value>يوجد مجموعة صلاحيات بنفس الاسم</value>
+  </data>
+  <data name="PermissionGroup.NotFound" xml:space="preserve">
+    <value>لم يتم ايجاد مجموعه صلاحيات بهذا المعرف</value>
+  </data>
+  <data name="User.FirstName.Required" xml:space="preserve">
+    <value>الاسم الاول مطلوب</value>
+  </data>
+  <data name="User.LastName.Required" xml:space="preserve">
+    <value>اسم الجد مطلوب</value>
+  </data>
+  <data name="User.MiddleName.Required" xml:space="preserve">
+    <value>اسم الاب مطلوب</value>
+  </data>
+  <data name="User.NotFound" xml:space="preserve">
+    <value>لم يتم ايجاد مستخدم بهذا المعرق</value>
+  </data>
+  <data name="User.Password.CharactersType" xml:space="preserve">
+    <value>الرمز السري يجب ان يحتوي على الاقل على حرف صغير وحرف كبير ورقم</value>
+  </data>
+  <data name="User.Password.MaxLength" xml:space="preserve">
+    <value>الرمز السري لا يجب ان يتعدى ال16 مرتبه</value>
+  </data>
+  <data name="User.Password.MinimumLength" xml:space="preserve">
+    <value>الرمز السري يجب ان يكون اكبر من 6 مراتب</value>
+  </data>
+  <data name="UserPermissionGroup.Duplicated" xml:space="preserve">
+    <value>المستخدم منسب لمجموعة الصلاحيات سابقا</value>
+  </data>
+  <data name="Governorate.Name.Unique" xml:space="preserve">
+    <value>العنصر موجود سابقا</value>
+  </data>
+  <data name="Governorate.NotFound" xml:space="preserve">
+    <value>العنصر غير موجود</value>
+  </data>
+  <data name="Login.Username.NotValid" xml:space="preserve">
+    <value>البريد الالكتبروني خاطئ</value>
+  </data>
+  <data name="GeneralExcelTemplate.Column.DuplicateOrder" xml:space="preserve">
+    <value>ترتيب الاعمدة لا يمكن ان يكون مكرر</value>
+  </data>
+  <data name="GeneralExcelTemplate.Column.MissingOrWrongId" xml:space="preserve">
+    <value>عدد الاعمده لا يتطابق مع الجدول الرئيسي او خطأ في معرف احد الاعمدة</value>
+  </data>
+  <data name="GeneralExcelTemplate.Services.DuplicateOrder" xml:space="preserve">
+    <value>ترتيب الخدمات لا يمكن ان يكون مكرر</value>
+  </data>
+  <data name="GeneralExcelTemplate.Services.DuplicateService" xml:space="preserve">
+    <value>احدى الخدمات مكررة</value>
+  </data>
+  <data name="GeneralExcelTemplate.Services.OnlyMainServices" xml:space="preserve">
+    <value>يسمح فقط بأضافة الخدمات الرئيسية</value>
+  </data>
+  <data name="GeneralExcelTemplate.Services.WrongId" xml:space="preserve">
+    <value>خطأ في معرف احدى الخدمات</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>لا يوجد عنصر بهذا المعرف</value>
+  </data>
+  <data name="GeneralExcelTemplate.DeleteNotAllowed" xml:space="preserve">
+    <value>لا يمكن حذف قالب الاكسل العام لأنه مستخدم في احدى الدوائر</value>
+  </data>
+  <data name="GeneralService.ContainsChild" xml:space="preserve">
+    <value> الخدمة تحتوي على خدمات فرعية</value>
+  </data>
+  <data name="GeneralService.UsedByDepartment" xml:space="preserve">
+    <value> الخدمة مستخدمة في احد الدوائر</value>
+  </data>
+  <data name="GeneralService.UsedInExcelTemplate" xml:space="preserve">
+    <value>الخدمة مستخدمة في احد قوالب الاكسل</value>
+  </data>
+  <data name="Service.DuplicatedName" xml:space="preserve">
+    <value>اسم الخدمة موجود</value>
+  </data>
+  <data name="Service.ParentServiceCantBeChild" xml:space="preserve">
+    <value>الخدمة الرئيسية لا يمكن ان تكون فرعية</value>
+  </data>
+  <data name="Service.PercentageLimit" xml:space="preserve">
+    <value>المبلغ الاساسي للخدمة لا يمكن ان يكون اصغر من 0 او اكبر من 200 عندما يكون نسبة مئوية</value>
+  </data>
+  <data name="GeneralVacationType.Name.Unique" xml:space="preserve">
+    <value>يوجد عنصر بنفس الاسم</value>
+  </data>
+  <data name="VacationServiceRule.Duplicated" xml:space="preserve">
+    <value>لا يمكن تكرار شروط الخدمات لنفس الاجازة</value>
+  </data>
+  <data name="VacationServiceRule.ServiceId" xml:space="preserve">
+    <value>يسمح بأضافة الخدمات الرئيسية فقط</value>
+  </data>
+  <data name="GeneralVacationType.UsedInDepartment" xml:space="preserve">
+    <value>لا يسمح بحذف نوع الاجازة العام لأانها مستخدمة بأحدى الدوائر</value>
+  </data>
+  <data name="VacationServiceRule.RuleNotAllowed" xml:space="preserve">
+    <value>لا يمكن اضافة الشرط لأن نوع الاجازة لا يسمح بأستلام الاستحقاقات او الاستقطاعات</value>
+  </data>
+  <data name="Department.Create.Fail" xml:space="preserve">
+    <value>لم يتم انشاء دائرة, يرجى الاتصال بمسؤول النظام</value>
+  </data>
+  <data name="DepartmentServices.Add.OnlyMainGeneralServices" xml:space="preserve">
+    <value>يسمح بأضافة الخدمات الرئيسية فقط</value>
+  </data>
+  <data name="Department.Domain.Duplicated" xml:space="preserve">
+    <value>يوجد دائرة اخرى بنفس النطاق</value>
+  </data>
+  <data name="Department.Name.Duplicated" xml:space="preserve">
+    <value>يوجد دائرة اخرى بنفس الاسم</value>
+  </data>
+  <data name="DepartmentExcelTemplate.InvalidGeneralTemplateId" xml:space="preserve">
+    <value>معرف احد القوالب العامة خاطئ</value>
+  </data>
+  <data name="NoPermissionToAccessDepartment" xml:space="preserve">
+    <value>لا يمكنك الوصول لهذه الدائرة</value>
+  </data>
+  <data name="Service.UsedByEmployee" xml:space="preserve">
+    <value>الخدمة مستخدمة لموظف</value>
+  </data>
+  <data name="DepartmentVacationType.InvalidGeneralVacationTypeId" xml:space="preserve">
+    <value>معرف احد انواع الاجايز العامة خاطئ</value>
+  </data>
+  <data name="DepartmentVacationType.Used" xml:space="preserve">
+    <value>لا يمكن حذف الاجازة لأانها مستخدمة</value>
+  </data>
+  <data name="UserUnits.InvalidUnitId" xml:space="preserve">
+    <value>معرف احد الاقسام خاطئ</value>
+  </data>
+  <data name="Unit.Duplicated" xml:space="preserve">
+    <value>يوجد قسم بنفس الاسم</value>
+  </data>
+  <data name="Unit.UsedByEmployee" xml:space="preserve">
+    <value>احد الموظفين منسب الى هذا القسم</value>
+  </data>
+  <data name="DownloadEmployeeUploadTemplate" xml:space="preserve">
+    <value>ملف رفع موظفي دائرة {0}</value>
+  </data>
+  <data name="Employee.Bank.Required" xml:space="preserve">
+    <value>المصرف مطلوب</value>
+  </data>
+  <data name="Employee.Enrollment.InvalidSalary" xml:space="preserve">
+    <value>راتب الموظف غير صحيح</value>
+  </data>
+  <data name="Employee.FirstName.Required" xml:space="preserve">
+    <value>الاسم الاول مطلوب</value>
+  </data>
+  <data name="Employee.JobTitle.Invalid" xml:space="preserve">
+    <value>العنوان الوظيفي خاطئ</value>
+  </data>
+  <data name="Employee.MartialStatus.Invalid" xml:space="preserve">
+    <value>الحالة الزوجية خاطئة</value>
+  </data>
+  <data name="Employee.position.Invalid" xml:space="preserve">
+    <value>المنصب خاطئ</value>
+  </data>
+  <data name="Employee.Unit.Invalid" xml:space="preserve">
+    <value>القسم مطلوب</value>
+  </data>
+  <data name="Iban.Invalid" xml:space="preserve">
+    <value>ال Iban يجب ان يتكون من 23 حرف ورقم</value>
+  </data>
+  <data name="Iban.InvalidBankCode" xml:space="preserve">
+    <value>رمز المصرف خاطئ في ال Iban او لا يتقاطع مع المصارف الموجودة في النظام</value>
+  </data>
+  <data name="UnhandledException" xml:space="preserve">
+    <value>حدث خطأ غير متوقع, يرجى الاتصال بالدعم الفني</value>
+  </data>
+  <data name="EmployeeService.DeductionNotAllowed" xml:space="preserve">
+    <value>لا يمكن اضافة الاستقطاع راتب الموظف وصل الحد الادنى</value>
+  </data>
+  <data name="EmployeeServices.Duplicated" xml:space="preserve">
+    <value>الاستحقاق او الاستقطاع موجود</value>
+  </data>
+  <data name="EmployeeService.DeleteAllowanceNotAllowed" xml:space="preserve">
+    <value>لا يمكن حذف الاستحقاق, راتب الموظف سيكون دون الحد الادنى</value>
+  </data>
+  <data name="BasicSalaryAddition.DeleteNotAllowed" xml:space="preserve">
+    <value>لا يمكن حذف الاضافات على الراتب, راتب الموظف سيكون تحت الحد الادنى</value>
+  </data>
+  <data name="GeneralBank.UsedByEmployees" xml:space="preserve">
+    <value>لا يمكن حذف المصرف لأنه مستخدم في احد الدوائر</value>
+  </data>
+  <data name="AcademicAchievement.GeneralServiceId" xml:space="preserve">
+    <value>نوع الاستحقاق يجب ان يكون فرعي او رئيسي بدون فروع</value>
+  </data>
+  <data name="AcademicAchievement.UsedByEmployees" xml:space="preserve">
+    <value>لا يمكن حذف الشهادة لأنها مستخدمة عند موظف او اكثر</value>
+  </data>
+  <data name="GeneralPosition.GeneralService" xml:space="preserve">
+    <value>نوع الاستحقاق يجب ان يكون فرعي او رئيسي بدون فروع</value>
+  </data>
+</root>

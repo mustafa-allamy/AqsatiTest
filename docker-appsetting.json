@@ -1,0 +1,31 @@
+{
+    "AllowedHosts": "*",
+    "ConnectionStrings": {
+      "remote": "Server=social-protection.cy6ohptvljuj.eu-central-1.rds.amazonaws.com,1433;Database=social-protection;User Id=admin;Password=HJFu747fdsafjdf3eHDy;TrustServerCertificate=True;"
+    },
+    "Serilog": {
+      "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.File" ],
+      "MinimumLevel": "Warning",
+      "WriteTo": [
+        { "Name": "Console" },
+        {
+          "Name": "File",
+          "Args": { "path": "Logs/log.txt" },
+          "rollingInterval": "Day",
+          "rollOnFileSizeLimit": true,
+          "formatter": "Serilog.Formattting.Compact.CompactJsonFormatter, Serilog.Formatting.Compact"
+        }
+      ],
+      "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId" ],
+      "Properties": {
+        "Application": "Sample"
+      }
+    },
+  
+    "JWT": {
+      "Secret": "oHRQrw1l9sPrhlpi785r07DrIFFE4ovI",
+       "Expire": 3, //In days 
+    "RefreshTokenExpire": 30 //In days 
+    }
+  }
+  
